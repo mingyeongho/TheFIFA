@@ -1,0 +1,35 @@
+@import "../variable.scss";
+@import "../mixin.scss";
+
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .logo {
+    font-family: "AnuDaw";
+    color: white;
+  }
+}
+
+@include mobile {
+  .header {
+    font-size: 0.7rem;
+    padding: map-get($mobile, "gutter_y") map-get($mobile, "gutter_x");
+  }
+}
+
+@include tablet {
+  .header {
+    font-size: 1rem;
+    padding: map-get($tablet, "gutter_y") map-get($tablet, "gutter_x");
+  }
+}
+
+@include desktop {
+  .header {
+    font-size: 1rem;
+    padding: map-get($desktop, "gutter_y") map-get($desktop, "gutter_x");
+  }
+}
