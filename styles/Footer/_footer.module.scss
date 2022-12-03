@@ -1,0 +1,30 @@
+@import "../variable.scss";
+@import "../mixin.scss";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+
+@include mobile {
+  .footer {
+    padding: 4px;
+  }
+}
+
+@include tablet {
+  .footer {
+    font-size: 1.125rem;
+    padding: 4px;
+  }
+}
+
+@include desktop {
+  .footer {
+    font-size: 1.125rem;
+    padding: 8px;
+  }
+}
