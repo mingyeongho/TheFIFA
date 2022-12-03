@@ -1,0 +1,18 @@
+$mobile: (
+  "mobile_max": 767px,
+  "gutter_x": 10px,
+  "gutter_y": 10px,
+);
+
+$tablet: (
+  "tablet_min": 768px,
+  "tablet_max": 1023px,
+  "gutter_x": 50px,
+  "gutter_y": 10px,
+);
+
+$desktop: (
+  "desktop_min": 1024px,
+  "gutter_x": 100px,
+  "gutter_y": 10px,
+);

@@ -1,0 +1,19 @@
+@import "./variable.scss";
+
+@mixin mobile {
+  @media screen and (max-width: map-get($mobile, "mobile_max")) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: map-get($tablet, "tablet_min")) and (max-width: map-get($tablet, "tablet_max")) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: map-get($desktop, "desktop_min")) {
+    @content;
+  }
+}
