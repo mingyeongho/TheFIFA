@@ -6,12 +6,17 @@
   display: flex;
   color: white;
   border-radius: 8px;
+  justify-content: center;
 
   & > .rank {
     display: flex;
     & > .max_division {
       display: flex;
       flex-direction: column;
+
+      & > .title {
+        white-space: nowrap;
+      }
 
       & > .separation {
         background-color: white;
@@ -46,6 +51,10 @@
       align-items: center;
       flex: 1;
       font-weight: bolder;
+
+      &.toolong {
+        font-size: 0.725rem;
+      }
     }
   }
 }
@@ -54,7 +63,6 @@
   .profile_wrapper {
     padding: 10px;
     gap: 10px;
-    justify-content: center;
 
     & > .rank {
       gap: 10px;
@@ -73,7 +81,7 @@
   .profile_wrapper {
     padding: 16px;
     gap: 16px;
-    width: fit-content;
+    width: 380px;
 
     & > .rank {
       gap: 16px;
@@ -92,7 +100,7 @@
   .profile_wrapper {
     padding: 20px;
     gap: 20px;
-    width: fit-content;
+    width: 400px;
 
     & > .rank {
       gap: 20px;

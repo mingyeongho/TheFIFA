@@ -39,14 +39,14 @@ const Profile = ({ user }: ProfileProps) => {
     <div className={styles.profile_wrapper}>
       <div className={styles.rank}>
         <div className={styles.max_division}>
-          <div>공식경기 최고등급</div>
+          <div className={styles.title}>공식경기 최고등급</div>
           <div className={styles.separation}></div>
           <div className={styles.image}>
             {!isLoading && profile ? rank_img(0) : <div>Loading...</div>}
           </div>
         </div>
         <div className={styles.max_division}>
-          <div>감독모드 최고등급</div>
+          <div className={styles.title}>감독모드 최고등급</div>
           <div className={styles.separation}></div>
           <div className={styles.image}>
             {!isLoading ? rank_img(1) : <div>Loading...</div>}
@@ -56,7 +56,13 @@ const Profile = ({ user }: ProfileProps) => {
       <div className={styles.user}>
         <div className={styles.level}>Level: {level}</div>
         <div className={styles.separation}></div>
-        <div className={styles.nickname}>{nickname}</div>
+        <div
+          className={`${styles.nickname} ${
+            nickname.length > 6 ? styles.toolong : ""
+          }`}
+        >
+          {nickname}
+        </div>
       </div>
     </div>
   );
