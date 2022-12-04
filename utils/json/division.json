@@ -1,0 +1,110 @@
+[
+  {
+    "divisionId": 800,
+    "divisionName": "슈퍼챔피언스",
+    "divisionImageOffical": "/imgs/rank/offical/rank0_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank0_m.png"
+  },
+  {
+    "divisionId": 900,
+    "divisionName": "챔피언스",
+    "divisionImageOffical": "/imgs/rank/offical/rank1_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank1_m.png"
+  },
+  {
+    "divisionId": 1000,
+    "divisionName": "슈퍼챌린지",
+    "divisionImageOffical": "/imgs/rank/offical/rank2_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank2_m.png"
+  },
+  {
+    "divisionId": 1100,
+    "divisionName": "챌린지1",
+    "divisionImageOffical": "/imgs/rank/offical/rank3_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank3_m.png"
+  },
+  {
+    "divisionId": 1200,
+    "divisionName": "챌린지2",
+    "divisionImageOffical": "/imgs/rank/offical/rank4_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank4_m.png"
+  },
+  {
+    "divisionId": 1300,
+    "divisionName": "챌린지3",
+    "divisionImageOffical": "/imgs/rank/offical/rank5_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank5_m.png"
+  },
+  {
+    "divisionId": 2000,
+    "divisionName": "월드클래스1",
+    "divisionImageOffical": "/imgs/rank/offical/rank6_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank6_m.png"
+  },
+  {
+    "divisionId": 2100,
+    "divisionName": "월드클래스2",
+    "divisionImageOffical": "/imgs/rank/offical/rank7_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank7_m.png"
+  },
+  {
+    "divisionId": 2200,
+    "divisionName": "월드클래스3",
+    "divisionImageOffical": "/imgs/rank/offical/rank8_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank8_m.png"
+  },
+  {
+    "divisionId": 2300,
+    "divisionName": "프로1",
+    "divisionImageOffical": "/imgs/rank/offical/rank9_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank9_m.png"
+  },
+  {
+    "divisionId": 2400,
+    "divisionName": "프로2",
+    "divisionImageOffical": "/imgs/rank/offical/rank10_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank10_m.png"
+  },
+  {
+    "divisionId": 2500,
+    "divisionName": "프로3",
+    "divisionImageOffical": "/imgs/rank/offical/rank11_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank11_m.png"
+  },
+  {
+    "divisionId": 2600,
+    "divisionName": "세미프로1",
+    "divisionImageOffical": "/imgs/rank/offical/rank12_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank12_m.png"
+  },
+  {
+    "divisionId": 2700,
+    "divisionName": "세미프로2",
+    "divisionImageOffical": "/imgs/rank/offical/rank13_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank13_m.png"
+  },
+  {
+    "divisionId": 2800,
+    "divisionName": "세미프로3",
+    "divisionImageOffical": "/imgs/rank/offical/rank14_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank14_m.png"
+  },
+  {
+    "divisionId": 2900,
+    "divisionName": "유망주1",
+    "divisionImageOffical": "/imgs/rank/offical/rank15_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank15_m.png"
+  },
+  {
+    "divisionId": 3000,
+    "divisionName": "유망주2",
+    "divisionImageOffical": "/imgs/rank/offical/rank16_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank16_o.png"
+  },
+  {
+    "divisionId": 3100,
+    "divisionName": "유망주3",
+    "divisionImageOffical": "/imgs/rank/offical/rank17_o.png",
+    "divisionImageManager": "/imgs/rank/manager/rank17_m.png"
+  }
+]

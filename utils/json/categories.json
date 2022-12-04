@@ -1,0 +1,46 @@
+[
+  {
+    "key": "possession",
+    "value": "점유율"
+  },
+  {
+    "key": "rateAttack",
+    "value": "공격 성공률"
+  },
+  {
+    "key": "ratePass",
+    "value": "패스 성공률"
+  },
+  {
+    "key": "shootTotal",
+    "value": "슛"
+  },
+  {
+    "key": "effectiveShootTotal",
+    "value": "유효슛"
+  },
+  {
+    "key": "cornerKick",
+    "value": "코너킥"
+  },
+  {
+    "key": "tackleSuccess",
+    "value": "태클"
+  },
+  {
+    "key": "foul",
+    "value": "파울"
+  },
+  {
+    "key": "yelloCards",
+    "value": "경고"
+  },
+  {
+    "key": "redCards",
+    "value": "퇴장"
+  },
+  {
+    "key": "injury",
+    "value": "부상"
+  }
+]
