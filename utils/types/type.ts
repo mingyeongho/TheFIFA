@@ -5,3 +5,9 @@ export type User = {
   nickname: string;
   level: number;
 };
+
+export type Rank = {
+  matchType: number;
+  division: number;
+  achievementDate: string;
+};
