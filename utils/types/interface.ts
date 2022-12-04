@@ -1,3 +1,4 @@
-export interface LayoutProps {
+export interface PanelProps {
+  title: string;
   children: JSX.Element;
 }
