@@ -1,0 +1,70 @@
+@import "../variable.scss";
+@import "../mixin.scss";
+
+.home {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .search_user {
+    & > input {
+      border: none;
+      outline: none;
+      border-radius: 8px 0 0 8px;
+    }
+    & > button {
+      border: none;
+      outline: none;
+      background-color: black;
+      color: white;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+    }
+  }
+}
+
+@include mobile {
+  .home {
+    .search_user {
+      & > input {
+        padding: 10px 14px;
+        font-size: 1rem;
+      }
+      & > button {
+        padding: 10px;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .home {
+    .search_user {
+      & > input {
+        padding: 10px 14px;
+        font-size: 1.5rem;
+      }
+      & > button {
+        padding: 10px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .home {
+    .search_user {
+      & > input {
+        padding: 10px 14px;
+        font-size: 1.5rem;
+      }
+      & > button {
+        padding: 10px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
