@@ -1,7 +1,16 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+#__next {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -9,8 +18,32 @@ a {
   color: inherit;
 }
 
+main {
+  flex: 1;
+  background-image: url("../public/imgs/bg_img.jpeg");
+  background-repeat: no-repeat;
+}
+
 @font-face {
   font-family: "AnuDaw";
   src: url("../public/font/ANUDI___.ttf");
   font-display: swap;
+}
+
+@include mobile {
+  main {
+    padding: map-get($mobile, "gutter_y") map-get($mobile, "gutter_x");
+  }
+}
+
+@include tablet {
+  main {
+    padding: map-get($tablet, "gutter_y") map-get($tablet, "gutter_x");
+  }
+}
+
+@include desktop {
+  main {
+    padding: map-get($desktop, "gutter_y") map-get($desktop, "gutter_x");
+  }
 }
