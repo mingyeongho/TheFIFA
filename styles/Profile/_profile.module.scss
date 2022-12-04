@@ -1,0 +1,108 @@
+@import "../variable.scss";
+@import "../mixin.scss";
+
+.profile_wrapper {
+  background-color: $background_color;
+  display: flex;
+  color: white;
+  border-radius: 8px;
+
+  & > .rank {
+    display: flex;
+    & > .max_division {
+      display: flex;
+      flex-direction: column;
+
+      & > .separation {
+        background-color: white;
+        height: 1px;
+      }
+
+      & > .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  & > .user {
+    display: flex;
+    flex-direction: column;
+    & > .level {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & > .separation {
+      background-color: white;
+      height: 1px;
+    }
+
+    & > .nickname {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      font-weight: bolder;
+    }
+  }
+}
+
+@include mobile {
+  .profile_wrapper {
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+
+    & > .rank {
+      gap: 10px;
+      & > .max_division {
+        gap: 4px;
+      }
+    }
+
+    & > .user {
+      gap: 4px;
+    }
+  }
+}
+
+@include tablet {
+  .profile_wrapper {
+    padding: 16px;
+    gap: 16px;
+    width: fit-content;
+
+    & > .rank {
+      gap: 16px;
+      & > .max_division {
+        gap: 6px;
+      }
+    }
+
+    & > .user {
+      gap: 6px;
+    }
+  }
+}
+
+@include desktop {
+  .profile_wrapper {
+    padding: 20px;
+    gap: 20px;
+    width: fit-content;
+
+    & > .rank {
+      gap: 20px;
+      & > .max_division {
+        gap: 8px;
+      }
+    }
+
+    & > .user {
+      gap: 8px;
+    }
+  }
+}
