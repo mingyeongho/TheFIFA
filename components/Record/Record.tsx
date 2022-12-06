@@ -12,8 +12,10 @@ import { RecordProps } from "../../utils/types/interface";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { MatchDTO, Nullable, TradeType } from "../../utils/types/type";
-import Match from "../Match/Match";
-import Trade from "../Trade/Trade";
+import dynamic from "next/dynamic";
+
+const Match = dynamic(() => import("../Match/Match"));
+const Trade = dynamic(() => import("../Trade/Trade"));
 
 const Record = ({ user }: RecordProps) => {
   const { accessId } = user;
