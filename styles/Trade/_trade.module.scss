@@ -1,31 +1,105 @@
 @import "../variable.scss";
 @import "../mixin.scss";
 
-.trade_wrapper {
-  background-color: $background_color;
-  display: flex;
-  color: white;
-  border-radius: 8px;
-  justify-content: center;
+.trade {
+  font-weight: bolder;
+  height: 100%;
+
+  & > .trade_type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid black;
+    &.buy {
+      background-color: $bg_mt_win;
+    }
+
+    &.sell {
+      background-color: $bg_mt_lose;
+    }
+  }
+
+  & > .trade_summary {
+    display: flex;
+    gap: 4px;
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid black;
+    border-top: none;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: inherit;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: black;
+    }
+
+    &.buy {
+      background-color: $bg_ms_win;
+    }
+
+    &.sell {
+      background-color: $bg_ms_lose;
+    }
+
+    & > .img {
+      position: relative;
+      flex: 1;
+    }
+
+    & > .item_detail {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & > .player {
+        display: flex;
+        gap: 8px;
+        white-space: nowrap;
+        & > .season {
+        }
+      }
+    }
+  }
 }
 
 @include mobile {
-  .trade_wrapper {
-    padding: 10px;
-    gap: 10px;
+  .trade {
+    & > .trade_type {
+      padding: map-get($mobile, "padding");
+    }
+    & > .trade_summary {
+      padding: map-get($mobile, "padding");
+    }
   }
 }
 
 @include tablet {
-  .trade_wrapper {
-    padding: 16px;
-    gap: 16px;
+  .trade {
+    & > .trade_type {
+      padding: map-get($tablet, "padding");
+    }
+    & > .trade_summary {
+      padding: map-get($tablet, "padding");
+    }
   }
 }
 
 @include desktop {
-  .trade_wrapper {
-    padding: 20px;
-    gap: 20px;
+  .trade {
+    & > .trade_type {
+      padding: map-get($desktop, "padding");
+    }
+    & > .trade_summary {
+      padding: map-get($desktop, "padding");
+    }
   }
 }
