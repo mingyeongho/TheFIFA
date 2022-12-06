@@ -1,0 +1,231 @@
+@import "../variable.scss";
+@import "../mixin.scss";
+
+.record_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+
+  & > .category_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    & > .type_selector {
+      background-color: $background-color;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & > nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > button {
+          border: none;
+          outline: none;
+          cursor: pointer;
+          color: white;
+          background-color: inherit;
+          font-weight: bolder;
+
+          &.focus {
+            background-color: rgb(131, 129, 129);
+            border-radius: 8px;
+          }
+        }
+      }
+
+      & > .select_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        & > select {
+          background-color: inherit;
+          border-radius: 8px;
+          color: white;
+          outline: none;
+          cursor: pointer;
+        }
+
+        & > .offset_btn {
+          & > button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    & > .offset {
+      background-color: $background-color;
+      border-radius: 8px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      & > form {
+        display: flex;
+        align-items: center;
+        & > input {
+          width: 50px;
+          border-radius: 8px;
+
+          &:disabled {
+            background-color: #ddd;
+          }
+        }
+        & > button {
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          outline: none;
+          cursor: pointer;
+          color: white;
+          background-color: inherit;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+
+  & > .list_wrapper {
+    background-color: $background-color;
+    border-radius: 8px;
+    display: grid;
+    gap: 12px;
+  }
+}
+
+@include mobile {
+  .record_wrapper {
+    & > .category_wrapper {
+      & > .type_selector {
+        padding: map-get($mobile, "padding");
+
+        & > nav {
+          gap: 14px;
+          & > button {
+            padding: 4px;
+            font-size: 0.875rem;
+          }
+        }
+
+        & > .select_wrapper {
+          & > select {
+            padding: 4px;
+          }
+        }
+      }
+
+      & > .offset {
+        padding: map-get($mobile, "padding");
+        & > form {
+          gap: map-get($mobile, "padding");
+          & > input {
+            padding: 4px;
+          }
+          & > button {
+            padding: 4px;
+          }
+        }
+      }
+    }
+
+    & > .list_wrapper {
+      padding: map-get($mobile, "padding");
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@include tablet {
+  .record_wrapper {
+    & > .category_wrapper {
+      & > .type_selector {
+        padding: map-get($tablet, "padding");
+
+        & > nav {
+          gap: 16px;
+          & > button {
+            padding: 4px;
+            font-size: 0.925rem;
+          }
+        }
+
+        & > .select_wrapper {
+          & > select {
+            padding: 4px;
+          }
+        }
+      }
+
+      & > .offset {
+        padding: map-get($tablet, "padding");
+        & > form {
+          gap: 4px;
+          & > input {
+            padding: 4px;
+          }
+          & > button {
+            padding: 4px;
+          }
+        }
+      }
+    }
+
+    & > .list_wrapper {
+      padding: map-get($tablet, "padding");
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@include desktop {
+  .record_wrapper {
+    & > .category_wrapper {
+      & > .type_selector {
+        padding: map-get($desktop, "padding");
+
+        & > nav {
+          gap: 20px;
+          & > button {
+            padding: 6px;
+            font-size: 1rem;
+          }
+        }
+
+        & > .select_wrapper {
+          & > select {
+            padding: 6px;
+          }
+        }
+      }
+
+      & > .offset {
+        padding: map-get($desktop, "padding");
+        & > form {
+          gap: 4px;
+          & > input {
+            padding: 6px;
+          }
+          & > button {
+            padding: 6px;
+          }
+        }
+      }
+    }
+
+    & > .list_wrapper {
+      padding: map-get($desktop, "padding");
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

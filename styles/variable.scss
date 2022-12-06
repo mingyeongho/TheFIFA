@@ -2,6 +2,7 @@ $mobile: (
   "mobile_max": 767px,
   "gutter_x": 10px,
   "gutter_y": 10px,
+  "padding": 10px,
 );
 
 $tablet: (
@@ -9,12 +10,22 @@ $tablet: (
   "tablet_max": 1023px,
   "gutter_x": 50px,
   "gutter_y": 10px,
+  "padding": 16px,
 );
 
 $desktop: (
   "desktop_min": 1024px,
   "gutter_x": 100px,
   "gutter_y": 10px,
+  "padding": 20px,
 );
 
 $background_color: #31313c;
+
+$bg_mt_lose: #e84057;
+$bg_mt_draw: #00bba3;
+$bg_mt_win: #5383e8;
+
+$bg_ms_lose: #59343b;
+$bg_ms_draw: #01574c;
+$bg_ms_win: #28344e;

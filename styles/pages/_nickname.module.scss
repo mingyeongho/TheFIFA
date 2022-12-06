@@ -2,4 +2,24 @@
 @import "../mixin.scss";
 
 .user_page {
+  display: flex;
+  flex-direction: column;
+}
+
+@include mobile {
+  .user_page {
+    gap: 10px;
+  }
+}
+
+@include tablet {
+  .user_page {
+    gap: 10px;
+  }
+}
+
+@include desktop {
+  .user_page {
+    gap: 10px;
+  }
 }

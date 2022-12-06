@@ -7,8 +7,13 @@
   box-sizing: border-box;
 }
 
+html,
+body,
 #__next {
-  height: 100vh;
+  height: 100%;
+}
+
+#__next {
   display: flex;
   flex-direction: column;
 }

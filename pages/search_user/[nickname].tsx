@@ -1,7 +1,10 @@
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import Match from "../../components/Match/Match";
 import Profile from "../../components/Profile/Profile";
+import Record from "../../components/Record/Record";
+import Trade from "../../components/Trade/Trade";
 import styles from "../../styles/pages/_nickname.module.scss";
 import { Nullable, User } from "../../utils/types/type";
 
@@ -23,7 +26,14 @@ const Nickname = () => {
   }, [nickname]);
 
   return (
-    <div className={styles.user_page}>{user && <Profile user={user} />}</div>
+    <div className={styles.user_page}>
+      {user && (
+        <>
+          <Profile user={user} />
+          <Record user={user} />
+        </>
+      )}
+    </div>
   );
 };
 
