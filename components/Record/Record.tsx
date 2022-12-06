@@ -42,12 +42,13 @@ const Record = ({ user }: RecordProps) => {
   };
 
   const onClickType = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const btn: HTMLButtonElement = e.currentTarget;
     setCurrCategory((prev) => {
       return {
         ...prev,
-        type: prev.type === "match" ? "trade" : "match",
-        subcategory: prev.type === "match" ? "buy" : "50",
-        offset: "0",
+        type: btn.value,
+        subcategory: btn.value === "trade" ? "buy" : "50",
+        offset: offset,
       };
     });
   };
@@ -57,6 +58,7 @@ const Record = ({ user }: RecordProps) => {
       return {
         ...prev,
         subcategory: e.target.value,
+        offset: "0",
       };
     });
   };
@@ -68,11 +70,7 @@ const Record = ({ user }: RecordProps) => {
     );
     setData(res.data);
     setIsLoading((prev) => !prev);
-  }, [accessId, subcategory, type, offset]);
-
-  // useEffect(() => {
-  //   fetch();
-  // }, [fetch]);
+  }, [accessId, offset, subcategory, type]);
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -90,6 +88,7 @@ const Record = ({ user }: RecordProps) => {
                 value={cur.type}
                 className={type === cur.type ? styles.focus : ""}
                 onClick={onClickType}
+                type="button"
               >
                 {cur.desc}
               </button>
@@ -136,7 +135,7 @@ const Record = ({ user }: RecordProps) => {
         {!isLoading ? (
           data ? (
             data.map((cur, idx) => {
-              if ((cur as MatchDTO).matchDate) {
+              if ((cur as MatchDTO).matchInfo) {
                 return (
                   <Match
                     key={idx}
@@ -144,14 +143,8 @@ const Record = ({ user }: RecordProps) => {
                     accessId={accessId}
                   ></Match>
                 );
-              } else {
-                return (
-                  <Trade
-                    key={idx}
-                    item={cur as TradeType}
-                    subcategory={subcategory}
-                  />
-                );
+              } else if ((cur as TradeType).saleSn) {
+                return <Trade key={idx} item={cur as TradeType} />;
               }
             })
           ) : (

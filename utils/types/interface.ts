@@ -14,7 +14,6 @@ export interface RecordProps {
 
 export interface TradeProps {
   item: TradeType;
-  subcategory: string;
 }
 
 export interface MatchProps {

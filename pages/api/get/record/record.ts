@@ -39,7 +39,12 @@ const fetch = async (
     const res = await axios.get(API_URL, {
       headers: { Authorization: process.env.NEXT_PUBLIC_API_KEY },
     });
-    return res.data;
+    return res.data.map((cur: TradeType) => {
+      return {
+        ...cur,
+        type: category,
+      };
+    });
   }
 };
 
@@ -56,7 +61,6 @@ const handler = async (
     typeof offset === "string"
   ) {
     const data = await fetch(id, type, category, offset);
-    console.log(data);
     res.status(200).json(data);
   }
 };

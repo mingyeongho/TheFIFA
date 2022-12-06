@@ -18,6 +18,7 @@ export type TradeType = {
   spid: number;
   grade: number;
   value: number;
+  type: string;
 };
 
 export type MatchDTO = {

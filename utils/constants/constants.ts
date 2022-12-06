@@ -44,3 +44,7 @@ export const API_URL_GET_TRADE_LIST =
   "https://api.nexon.co.kr/fifaonline4/v1.0/users/{accessid}/markets?tradetype={tradetype}&offset={offset}&limit=30";
 export const API_URL_GET_MATCH_DETAIL =
   "https://api.nexon.co.kr/fifaonline4/v1.0/matches/";
+export const API_URL_GET_PLAYER_IMG =
+  "https://fo4.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p{spid}.png";
+export const API_URL_GET_PLAYER_NORMAL_IMG =
+  "https://fo4.dn.nexoncdn.co.kr/live/externalAssets/common/players/p{pid}.png";
