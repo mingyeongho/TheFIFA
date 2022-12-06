@@ -44,7 +44,7 @@ const Match = ({ item, accessId }: MatchProps) => {
             ).map((cur, idx) => {
               const { name, season } = cur;
               return (
-                <div key={idx}>
+                <div key={idx} className={styles.player}>
                   <span>{season}</span>
                   <span>{name}</span>
                   <FontAwesomeIcon icon={faFutbol} />

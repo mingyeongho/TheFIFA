@@ -4,6 +4,7 @@
 .match {
   font-weight: bolder;
   height: 100%;
+
   & > .match_type {
     display: flex;
     justify-content: space-between;
@@ -77,9 +78,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 2px;
+        gap: 4px;
 
         & > .player {
+          display: flex;
+          gap: 4px;
         }
       }
     }
