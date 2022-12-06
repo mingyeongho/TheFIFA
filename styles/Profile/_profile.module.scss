@@ -61,7 +61,7 @@
 
 @include mobile {
   .profile_wrapper {
-    padding: 10px;
+    padding: map-get($mobile, "padding");
     gap: 10px;
 
     & > .rank {
@@ -79,7 +79,7 @@
 
 @include tablet {
   .profile_wrapper {
-    padding: 16px;
+    padding: map-get($tablet, "padding");
     gap: 16px;
     width: 380px;
 
@@ -98,7 +98,7 @@
 
 @include desktop {
   .profile_wrapper {
-    padding: 20px;
+    padding: map-get($desktop, "padding");
     gap: 20px;
     width: 400px;
 
