@@ -99,7 +99,11 @@ const Record = ({ user }: RecordProps) => {
               {conditionCategory()}
             </select>
             <div className={styles.offset_btn}>
-              <button onClick={() => setIsShowOffset((prev) => !prev)}>
+              <button
+                type="button"
+                aria-label="offsetBtn"
+                onClick={() => setIsShowOffset((prev) => !prev)}
+              >
                 <FontAwesomeIcon icon={faCaretDown} />
               </button>
             </div>
@@ -124,6 +128,7 @@ const Record = ({ user }: RecordProps) => {
               <input
                 type="text"
                 disabled
+                placeholder="maximum"
                 value={offset ? parseInt(offset) + 30 : 30}
               />
               <button type="submit">검색</button>
