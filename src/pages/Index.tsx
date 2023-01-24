@@ -1,5 +1,7 @@
+import SearchPage from "../components/SearchPage/SearchPage";
+
 const Index = () => {
-  return <div>Index</div>;
+  return <SearchPage />;
 };
 
 export default Index;

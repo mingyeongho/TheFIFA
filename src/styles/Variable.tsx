@@ -1,1 +1,1 @@
-export const Variable = {};
+export const Palette = {};
