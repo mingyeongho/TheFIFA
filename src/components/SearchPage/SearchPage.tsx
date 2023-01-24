@@ -1,6 +1,5 @@
-import { Suspense } from "react";
 import { SearchProps } from "../../utils/interface";
-import Search from "../Common/Search/Search";
+import Search from "./Search/Search";
 import ShadowBox from "../Common/ShadowBox/ShadowBox";
 import useSearchpage from "./hooks/useSearchpage";
 import * as S from "./SearchPage.style";
