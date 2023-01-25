@@ -20,7 +20,9 @@ const useDivision = ({
   };
 
   const getRank = async () => {
-    const res = await axios.get(META_URL.divisionOffical);
+    const RankURL =
+      matchType === 214 ? META_URL.divisionVolta : META_URL.divisionOffical;
+    const res = await axios.get(RankURL);
     const json: { divisionId: number; divisionName: string }[] = res.data;
     const r = json.find((type) => type.divisionId === division)!.divisionName;
     setRank(r);

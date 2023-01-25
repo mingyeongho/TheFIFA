@@ -8,6 +8,7 @@ export const API_URL = {
 export const META_URL = {
   matchType: `https://static.api.nexon.co.kr/fifaonline4/latest/matchtype.json`,
   divisionOffical: `https://static.api.nexon.co.kr/fifaonline4/latest/division.json`,
+  divisionVolta: `https://static.api.nexon.co.kr/fifaonline4/latest/division_volta.json`,
 };
 
 export const API_KEY = import.meta.env.VITE_API_KEY;
