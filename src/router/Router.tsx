@@ -4,12 +4,10 @@ import User from "../pages/User";
 
 const Router = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/user/:nickname" element={<User />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="/user/:nickname" element={<User />} />
+    </Routes>
   );
 };
 

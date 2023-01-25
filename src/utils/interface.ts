@@ -16,3 +16,15 @@ export interface SearchProps {
 export interface ProfileProps {
   user: User;
 }
+
+export interface RecordProps {
+  user: User;
+}
+
+export interface MatchProps {
+  accessId: string;
+}
+
+export interface TradeProps {
+  accessId: string;
+}

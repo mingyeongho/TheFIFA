@@ -3,12 +3,14 @@ export const API_URL = {
     `https://api.nexon.co.kr/fifaonline4/v1.0/users?nickname=${nickname}`,
   getMaxDivision: (accessId: string) =>
     `https://api.nexon.co.kr/fifaonline4/v1.0/users/${accessId}/maxdivision`,
-};
-
-export const META_URL = {
-  matchType: `https://static.api.nexon.co.kr/fifaonline4/latest/matchtype.json`,
-  divisionOffical: `https://static.api.nexon.co.kr/fifaonline4/latest/division.json`,
-  divisionVolta: `https://static.api.nexon.co.kr/fifaonline4/latest/division_volta.json`,
+  getMatchRecord: ({
+    accessid,
+    matchtype,
+  }: {
+    accessid: string;
+    matchtype: string;
+  }) =>
+    `https://api.nexon.co.kr/fifaonline4/v1.0/users/${accessid}/matches?matchtype=${matchtype}&offset=0&limit=20`,
 };
 
 export const API_KEY = import.meta.env.VITE_API_KEY;

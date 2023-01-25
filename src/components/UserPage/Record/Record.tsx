@@ -1,7 +1,27 @@
+import { useSearchParams } from "react-router-dom";
+import { RecordProps } from "../../../utils/interface";
+import Match from "./Match/Match";
 import * as S from "./Record.style";
+import RecordNav from "./RecordNav/RecordNav";
+import Trade from "./Trade/Trade";
 
-const Record = () => {
-  return <S.Record>record</S.Record>;
+const Record = ({ user }: RecordProps) => {
+  const { accessId } = user;
+  const record = useSearchParams()[0].get("record");
+
+  return (
+    <S.RecordContainer>
+      <S.Record>
+        {accessId}
+        <RecordNav />
+        {!record ? (
+          <Match accessId={accessId} />
+        ) : (
+          <Trade accessId={accessId} />
+        )}
+      </S.Record>
+    </S.RecordContainer>
+  );
 };
 
 export default Record;

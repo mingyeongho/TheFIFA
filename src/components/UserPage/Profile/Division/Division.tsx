@@ -4,7 +4,6 @@ import useDivision from "./hooks/useDivision";
 
 const Division = ({ matchType, division, achievementDate }: DivisionType) => {
   const { desc, rank } = useDivision({ matchType, division });
-  console.log(desc, rank);
   return <S.Division children={`${desc}: ${rank}`}></S.Division>;
 };
 

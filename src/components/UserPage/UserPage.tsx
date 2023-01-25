@@ -28,8 +28,7 @@ const UserPage = () => {
       {user ? (
         <>
           <Profile user={user} />
-
-          <Record />
+          <Record user={user} />
         </>
       ) : (
         <NotFound />
