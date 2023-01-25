@@ -1,5 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import { RecordProps } from "../../../utils/interface";
+import { SeaprateX } from "../../Common/Separate/Separate";
 import Match from "./Match/Match";
 import * as S from "./Record.style";
 import RecordNav from "./RecordNav/RecordNav";
@@ -12,13 +13,15 @@ const Record = ({ user }: RecordProps) => {
   return (
     <S.RecordContainer>
       <S.Record>
-        {accessId}
-        <RecordNav />
-        {!record ? (
-          <Match accessId={accessId} />
-        ) : (
-          <Trade accessId={accessId} />
-        )}
+        <S.RecordHeader>
+          <RecordNav />
+          {!record ? (
+            <Match accessId={accessId} />
+          ) : (
+            <Trade accessId={accessId} />
+          )}
+        </S.RecordHeader>
+        <SeaprateX />
       </S.Record>
     </S.RecordContainer>
   );

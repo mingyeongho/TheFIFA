@@ -1,13 +1,5 @@
 [
   {
-    "matchtype": 30,
-    "desc": "리그 친선"
-  },
-  {
-    "matchtype": 40,
-    "desc": "클래식 1on1"
-  },
-  {
     "matchtype": 50,
     "desc": "공식경기"
   },
@@ -18,6 +10,14 @@
   {
     "matchtype": 60,
     "desc": "공식 친선"
+  },
+  {
+    "matchtype": 40,
+    "desc": "클래식 1on1"
+  },
+  {
+    "matchtype": 30,
+    "desc": "리그 친선"
   },
   {
     "matchtype": 204,

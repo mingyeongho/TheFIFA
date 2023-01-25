@@ -6,12 +6,16 @@ export const RecordNav = styled.nav`
 
   a {
     padding: 8px;
-    background-color: rgba(120, 120, 120, 0.5);
+    background-color: #555;
     color: white;
     outline: none;
     border: none;
     border-radius: 10px;
     font-size: 1.125rem;
     font-weight: bolder;
+
+    &.focus {
+      background-color: #b1b1b1;
+    }
   }
 `;
