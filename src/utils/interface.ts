@@ -1,4 +1,5 @@
 import React, { ChangeEvent } from "react";
+import { User } from "./type";
 
 export interface ShadowBoxProps {
   children: React.ReactNode;
@@ -10,4 +11,8 @@ export interface SearchProps {
   value: string;
   placeholder: string;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+}
+
+export interface ProfileProps {
+  user: User;
 }
