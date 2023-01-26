@@ -15,7 +15,3 @@ export const Palette = {
     separate: "#00666E",
   },
 };
-
-export const Image = {
-  BackgroundImage: "/Users/mingyeongho/Coding/thefifa/src/assets/bg_img.jpeg",
-};

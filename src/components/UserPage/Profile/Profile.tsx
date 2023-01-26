@@ -5,6 +5,7 @@ import { ProfileProps } from "../../../utils/interface";
 import { DivisionType } from "../../../utils/type";
 import Division from "./Division/Division";
 import * as S from "./Profile.style";
+import profile from "../../../assets/profile.png";
 
 const Profile = ({ user }: ProfileProps) => {
   const { nickname, level, accessId } = user;
@@ -25,7 +26,7 @@ const Profile = ({ user }: ProfileProps) => {
     <S.ProfileContainer>
       <S.Profile>
         <S.ThumbnailContainer>
-          <S.Thumbnail src={"/src/assets/profile.png"} />
+          <S.Thumbnail src={profile} />
         </S.ThumbnailContainer>
         <S.NameContainer>
           <S.DivisionContainer>

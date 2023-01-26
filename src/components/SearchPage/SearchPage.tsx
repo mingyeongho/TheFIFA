@@ -3,6 +3,7 @@ import Search from "./Search/Search";
 import ShadowBox from "../Common/ShadowBox/ShadowBox";
 import useSearchpage from "./hooks/useSearchpage";
 import * as S from "./SearchPage.style";
+import bg_img from "../../assets/bg_img.jpeg";
 
 const SearchPage = () => {
   const { name, onChange } = useSearchpage();
@@ -15,7 +16,7 @@ const SearchPage = () => {
     onChange,
   };
   return (
-    <S.SearchPage>
+    <S.SearchPage style={{ backgroundImage: `url(${bg_img})` }}>
       <ShadowBox children={<Search {...searchProps} />} />
     </S.SearchPage>
   );
