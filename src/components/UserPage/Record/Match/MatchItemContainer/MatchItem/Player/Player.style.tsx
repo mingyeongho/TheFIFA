@@ -9,7 +9,13 @@ export const Player = styled.div`
   color: white;
 `;
 
-export const Controller = styled.span``;
+export const Controller = styled.span`
+  font-size: 2rem;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const Nickname = styled.span`
   flex: 1;
