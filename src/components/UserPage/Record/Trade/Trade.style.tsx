@@ -5,6 +5,7 @@ export const TradeContainer = styled.div``;
 export const TradeNav = styled.nav`
   display: flex;
   gap: 4px;
+  padding: 10px 20px 20px 20px;
 `;
 
 export const NavItem = styled.button`

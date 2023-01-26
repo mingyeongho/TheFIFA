@@ -10,10 +10,10 @@ export const S_SeparateY = styled.div`
   background-color: #ddd;
 `;
 
-export const SeaprateX = () => {
-  return <S_SeparateX />;
+export const SeaprateX = ({ color }: { color?: string }) => {
+  return <S_SeparateX style={{ backgroundColor: color }} />;
 };
 
-export const SeaprateY = () => {
-  return <S_SeparateY />;
+export const SeaprateY = ({ color }: { color?: string }) => {
+  return <S_SeparateY style={{ backgroundColor: color }} />;
 };

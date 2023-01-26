@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { TradeProps } from "../../../../utils/interface";
+import { SeaprateX } from "../../../Common/Separate/Separate";
 import * as S from "./Trade.style";
 
 const Navs = [
@@ -28,6 +29,7 @@ const Trade = ({ accessId }: TradeProps) => {
           />
         ))}
       </S.TradeNav>
+      <SeaprateX />
     </S.TradeContainer>
   );
 };

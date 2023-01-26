@@ -13,10 +13,3 @@ export const Record = styled.div`
   flex-direction: column;
   border-radius: 10px;
 `;
-
-export const RecordHeader = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 20px;
-`;

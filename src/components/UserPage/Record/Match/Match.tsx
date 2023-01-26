@@ -1,11 +1,12 @@
 import { MatchProps } from "../../../../utils/interface";
 import jsonMatchType from "../../../../json/jsonMatchType.json";
-
 import * as S from "./Match.style";
-import { useState } from "react";
+import { SeaprateX } from "../../../Common/Separate/Separate";
+import useMatch from "./hooks/useMatch";
+import MatchItemContainer from "./MatchItemContainer/MatchItemContainer";
 
 const Match = ({ accessId }: MatchProps) => {
-  const [type, setType] = useState(50);
+  const { type, setType, data, isLoading } = useMatch(accessId);
 
   return (
     <S.MatchContainer>
@@ -20,6 +21,21 @@ const Match = ({ accessId }: MatchProps) => {
           </S.NavItem>
         ))}
       </S.MatchNav>
+      <SeaprateX />
+      <S.MatchContent>
+        {isLoading ? (
+          <div>Loading...</div>
+        ) : (
+          data &&
+          data.data.map((matchId: string, idx: string) => (
+            <MatchItemContainer
+              key={idx}
+              matchId={matchId}
+              accessId={accessId}
+            />
+          ))
+        )}
+      </S.MatchContent>
     </S.MatchContainer>
   );
 };

@@ -11,6 +11,8 @@ export const API_URL = {
     matchtype: string;
   }) =>
     `https://api.nexon.co.kr/fifaonline4/v1.0/users/${accessid}/matches?matchtype=${matchtype}&offset=0&limit=20`,
+  getMatchItem: (matchId: string) =>
+    `https://api.nexon.co.kr/fifaonline4/v1.0/matches/${matchId}`,
 };
 
 export const API_KEY = import.meta.env.VITE_API_KEY;

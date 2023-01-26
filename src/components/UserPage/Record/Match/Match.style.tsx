@@ -5,6 +5,7 @@ export const MatchContainer = styled.div``;
 export const MatchNav = styled.nav`
   display: flex;
   gap: 4px;
+  padding: 10px 20px 20px 20px;
 `;
 
 export const NavItem = styled.button`
@@ -19,4 +20,12 @@ export const NavItem = styled.button`
   &.focus {
     background-color: #b1b1b1;
   }
+`;
+
+export const MatchContent = styled.div`
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
 `;

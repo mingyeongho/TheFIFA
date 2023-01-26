@@ -13,15 +13,12 @@ const Record = ({ user }: RecordProps) => {
   return (
     <S.RecordContainer>
       <S.Record>
-        <S.RecordHeader>
-          <RecordNav />
-          {!record ? (
-            <Match accessId={accessId} />
-          ) : (
-            <Trade accessId={accessId} />
-          )}
-        </S.RecordHeader>
-        <SeaprateX />
+        <RecordNav />
+        {!record ? (
+          <Match accessId={accessId} />
+        ) : (
+          <Trade accessId={accessId} />
+        )}
       </S.Record>
     </S.RecordContainer>
   );
