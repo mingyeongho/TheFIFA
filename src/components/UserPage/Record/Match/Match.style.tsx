@@ -29,3 +29,13 @@ export const MatchContent = styled.div`
   justify-content: space-around;
   gap: 20px;
 `;
+
+export const Loader = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 100px;
+  border-radius: 6px;
+  background-color: #4c4c56;
+`;

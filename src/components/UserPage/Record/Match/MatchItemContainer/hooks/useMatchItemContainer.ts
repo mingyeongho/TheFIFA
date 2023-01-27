@@ -12,6 +12,7 @@ const useMatchItemContainer = (matchId: string) => {
           headers: { Authorization: API_KEY },
         })
         .then((res) => res.data),
+    suspense: true,
   });
 
   return { isLoading, data };

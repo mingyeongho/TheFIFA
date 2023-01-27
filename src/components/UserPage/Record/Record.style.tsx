@@ -13,3 +13,9 @@ export const Record = styled.div`
   flex-direction: column;
   border-radius: 10px;
 `;
+
+export const Loader = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;

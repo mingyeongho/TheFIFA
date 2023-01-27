@@ -6,7 +6,7 @@ import { API_URL, API_KEY } from "../../../../../utils/constant";
 const useMatch = (accessId: string) => {
   const [type, setType] = useState(50);
 
-  const { isLoading, data } = useQuery({
+  const { data } = useQuery({
     queryKey: ["getMatchList", type, accessId],
     queryFn: () =>
       axios.get(
@@ -18,7 +18,7 @@ const useMatch = (accessId: string) => {
       ),
   });
 
-  return { type, setType, isLoading, data };
+  return { type, setType, data };
 };
 
 export default useMatch;

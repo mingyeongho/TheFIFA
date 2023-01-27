@@ -1,6 +1,7 @@
+import { Suspense } from "react";
 import { useSearchParams } from "react-router-dom";
 import { RecordProps } from "../../../utils/interface";
-import { SeaprateX } from "../../Common/Separate/Separate";
+import Spinner from "../../Common/Spinner/Spinner";
 import Match from "./Match/Match";
 import * as S from "./Record.style";
 import RecordNav from "./RecordNav/RecordNav";
@@ -17,7 +18,9 @@ const Record = ({ user }: RecordProps) => {
         {!record ? (
           <Match accessId={accessId} />
         ) : (
-          <Trade accessId={accessId} />
+          <Suspense fallback={<S.Loader children={<Spinner />} />}>
+            <Trade accessId={accessId} />
+          </Suspense>
         )}
       </S.Record>
     </S.RecordContainer>
