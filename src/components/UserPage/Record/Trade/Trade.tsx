@@ -1,9 +1,11 @@
-import { useState } from "react";
 import { TradeProps } from "../../../../utils/interface";
+import { TradeDTO } from "../../../../utils/type";
 import { SeaprateX } from "../../../Common/Separate/Separate";
+import useTrade from "./hooks/useTrade";
 import * as S from "./Trade.style";
+import TradeItem from "./TradeItem/TradeItem";
 
-const Navs = [
+const Navs: { desc: "판매" | "구매"; tradetype: "sell" | "buy" }[] = [
   {
     desc: "판매",
     tradetype: "sell",
@@ -15,7 +17,7 @@ const Navs = [
 ];
 
 const Trade = ({ accessId }: TradeProps) => {
-  const [type, setType] = useState("sell");
+  const { type, setType, data, isLoading } = useTrade(accessId);
 
   return (
     <S.TradeContainer>
@@ -30,6 +32,16 @@ const Trade = ({ accessId }: TradeProps) => {
         ))}
       </S.TradeNav>
       <SeaprateX />
+      <S.TradeContent>
+        {isLoading ? (
+          <div>Loading...</div>
+        ) : (
+          data &&
+          data.data.map((tradeItem: TradeDTO, idx: string) => (
+            <TradeItem type={type} tradeItem={tradeItem} key={idx} />
+          ))
+        )}
+      </S.TradeContent>
     </S.TradeContainer>
   );
 };

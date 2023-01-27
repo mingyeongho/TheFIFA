@@ -21,3 +21,11 @@ export const NavItem = styled.button`
     background-color: #b1b1b1;
   }
 `;
+
+export const TradeContent = styled.div`
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+`;

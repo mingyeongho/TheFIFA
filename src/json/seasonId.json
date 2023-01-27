@@ -2,391 +2,469 @@
   {
     "seasonId": 101,
     "className": "ICON (ICON)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/icon.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/icon.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/icon.png"
   },
   {
     "seasonId": 201,
     "className": "NHD (National Hero Debut)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/nhd.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/nhd.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/nhd.png"
   },
   {
     "seasonId": 202,
     "className": "TKI (Team Korea Icon)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/tki.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/tki.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/tki.png"
   },
   {
     "seasonId": 206,
     "className": "TB (Tournament Best)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/tb.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/tb.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/tb.png"
   },
   {
     "seasonId": 207,
     "className": "TT (Top Transfer)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/tt.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/tt.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/tt.png"
   },
   {
     "seasonId": 210,
     "className": "GR (Golden Rookies)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/gr.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/gr.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/gr.png"
   },
   {
     "seasonId": 211,
     "className": "19 TOTY (19 Team Of The Year)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19toty.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19toty.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/19toty.png"
   },
   {
     "seasonId": 212,
     "className": "18 TOTY (18 Team Of The Year)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/18toty.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/18toty.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/18toty.png"
   },
   {
     "seasonId": 213,
     "className": "Man City ICON (Man City ICON)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/mcicon.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/mcicon.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/mcicon.png"
   },
   {
     "seasonId": 214,
     "className": "TC (Tournament Champions)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/tc.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/tc.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/tc.png"
   },
   {
     "seasonId": 215,
     "className": "19 TOTS (19 Team Of The Season)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19tots.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19tots.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/19tots.png"
   },
   {
     "seasonId": 216,
     "className": "HOT (Heroes Of the Team)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/hot.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/hot.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/hot.png"
   },
   {
     "seasonId": 217,
     "className": "COC (Competitor Of Continents)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/coc.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/coc.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/coc.png"
   },
   {
     "seasonId": 218,
     "className": "OTW (Ones To Watch)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/otw.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/otw.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/otw.png"
   },
   {
     "seasonId": 219,
     "className": "19NG (19 NEW GENERATION)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19ng.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19ng.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/19ng.png"
   },
   {
     "seasonId": 220,
     "className": "20 TOTY (20 Team Of The Year)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20toty.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20toty.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/20toty.png"
   },
   {
     "seasonId": 221,
     "className": "19 UCL (19 UEFA Champions League)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19ucl.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19ucl.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/19ucl.png"
   },
   {
     "seasonId": 222,
     "className": "20 TOTN (20 Team Of The Nominated)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20totn.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20totn.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/20totn.png"
   },
   {
     "seasonId": 225,
     "className": "TKL (TEAM K LEAGUE)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/tkl.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/tkl.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/tkl.png"
   },
   {
     "seasonId": 230,
     "className": "20 TOTS (20 Team Of The Season)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20tots.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20tots.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/20tots.png"
   },
   {
     "seasonId": 231,
     "className": "VTR (Veteran)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/vtr.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/vtr.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/vtr.png"
   },
   {
     "seasonId": 233,
     "className": "MOG (Moments Of Glory)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/mog.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/mog.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/mog.png"
   },
   {
     "seasonId": 234,
     "className": "LH (Loyal Heroes)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/lh.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/lh.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/lh.png"
   },
   {
     "seasonId": 236,
     "className": "LA (Liverpool Ambassador)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/la.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/la.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/la.png"
   },
   {
     "seasonId": 237,
     "className": "MC (Multi-League Champions)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/mc.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/mc.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/mc.png"
   },
   {
     "seasonId": 238,
     "className": "20NG (20 NEW GENERATION)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20ng.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20ng.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/20ng.png"
   },
   {
     "seasonId": 239,
     "className": "20KLB (20 K-League Best)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20klb.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20klb.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/20klb.png"
   },
   {
     "seasonId": 240,
     "className": "21 TOTY (21 Team Of The Year)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21toty.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21toty.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/21toty.png"
   },
   {
     "seasonId": 241,
     "className": "21 TOTN (21 Team Of The Nominated)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21totn.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21totn.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/21totn.png"
   },
   {
     "seasonId": 242,
     "className": "20 UCL (20 UEFA Champions League)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20ucl.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20ucl.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/20ucl.png"
   },
   {
     "seasonId": 246,
     "className": "UP (Unsung Players)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/up.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/up.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/up.png"
   },
   {
     "seasonId": 247,
     "className": "2012 KH (2012 KH)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/2012kh.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/2012kh.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/2012kh.png"
   },
   {
     "seasonId": 249,
     "className": "NTG (Nostalgia)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/ngt.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/ngt.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/ngt.png"
   },
   {
     "seasonId": 250,
     "className": "21 TOTS (21 Team Of The Season)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21tots.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21tots.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/21tots.png"
   },
   {
     "seasonId": 251,
     "className": "EBS (European Best Stars)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/ebs.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/ebs.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/ebs.png"
   },
   {
     "seasonId": 252,
     "className": "CAP (Captain)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/cap.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/cap.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/cap.png"
   },
   {
     "seasonId": 253,
     "className": "BOE21 (Best of Europe 21)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/boe21.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/boe21.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/boe21.png"
   },
   {
     "seasonId": 254,
     "className": "CFA (Chelsea FC Ambassador)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/cfa.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/cfa.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/cfa.png"
   },
   {
     "seasonId": 256,
     "className": "BTB (Back to Back)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/btb.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/btb.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/btb.png"
   },
   {
     "seasonId": 257,
     "className": "21KLB (21 K-League Best)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21klb.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21klb.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/21klb.png"
   },
   {
     "seasonId": 258,
     "className": "22 TOTY (22 Team Of The Year)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22toty.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22toty.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/22toty.png"
   },
   {
     "seasonId": 259,
     "className": "22 TOTN (22 Team Of The Nominated)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22totn.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22totn.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/22totn.png"
   },
   {
     "seasonId": 260,
     "className": "21 UCL (21 UEFA Champions League)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21ucl.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21ucl.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/21ucl.png"
   },
   {
     "seasonId": 261,
     "className": "22HR (22 Heroes)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22hr.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22hr.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/22hr.png"
   },
   {
     "seasonId": 262,
     "className": "21NG (21 NEW GENERATION)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21ng.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21ng.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/21ng.png"
   },
   {
     "seasonId": 264,
     "className": "FA (FREE AGENT)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/fa.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/fa.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/fa.png"
   },
   {
     "seasonId": 265,
     "className": "LOL (LEGEND OF THE LOAN)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/lol.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/lol.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/lol.png"
   },
   {
     "seasonId": 267,
     "className": "22 TOTS (22 Team Of The Season)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22tots.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22tots.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/22tos.png"
   },
   {
     "seasonId": 268,
     "className": "LN (LEGENDARY NUMBERS)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/ln.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/ln.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/ln.png"
   },
   {
     "seasonId": 270,
     "className": "SPL (Spotlight)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/spl.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/spl.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/spl.png"
   },
   {
     "seasonId": 272,
     "className": "BWC (Best of World Cup)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/bwc.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/bwc.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/bwc.png"
   },
   {
     "seasonId": 273,
     "className": "WC22 (World Cup 2022)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/wc22.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/wc22.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/wc22.png"
   },
   {
     "seasonId": 274,
     "className": "RMCF (Real Madrid Ambassador)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/rmcf.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/rmcf.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/rmcf.png"
   },
   {
     "seasonId": 276,
     "className": "22NG (22 NEW GENERATION)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22ng.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22ng.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/22ng.png"
   },
   {
     "seasonId": 277,
     "className": "22KLB (22 K-League Best)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22klb.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22klb.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/22klb.png"
   },
   {
     "seasonId": 278,
     "className": "23 TOTY (23 Team Of The Year)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/23toty.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/23toty.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/23toty.png"
   },
   {
     "seasonId": 279,
     "className": "23 TOTN (23 Team Of The Nominated)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/23totn.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/23totn.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/23totn.png"
   },
   {
     "seasonId": 293,
     "className": "22 KFA (22 KFA)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22kfa.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22kfa.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/22kfa.png"
   },
   {
     "seasonId": 294,
     "className": "21 KFA (21 KFA)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21kfa.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21kfa.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/21kfa.png"
   },
   {
     "seasonId": 295,
     "className": "19 KFA (19 KFA)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/2019kfa.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/2019kfa.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/2019kfa.png"
   },
   {
     "seasonId": 297,
     "className": "MCFC (17-18 Man City Champions)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/mcfc.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/mcfc.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/mcfc.png"
   },
   {
     "seasonId": 298,
     "className": "18 KFA (18 KFA)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/kfa.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/kfa.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/kfa.png"
   },
   {
     "seasonId": 300,
     "className": "22 LIVE (22 LIVE)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/live.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/live.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/live.png"
   },
   {
     "seasonId": 317,
     "className": "17 LIVE (17 LIVE)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/17.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/17.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/17.png"
   },
   {
     "seasonId": 318,
     "className": "18 LIVE (18 LIVE)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/18.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/18.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/18.png"
   },
   {
     "seasonId": 319,
     "className": "19 LIVE (19 LIVE)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/19.png"
   },
   {
     "seasonId": 320,
     "className": "20 LIVE (20 LIVE)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/20.png"
   },
   {
     "seasonId": 321,
     "className": "21 LIVE (21 LIVE)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/21.png"
   },
   {
     "seasonId": 500,
     "className": "18 PLC–A (18 Premium Live Autumn)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/plc.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/plc.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/plc.png"
   },
   {
     "seasonId": 501,
     "className": "18 PLC–S (18 Premium Live Spring)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/18pls.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/18pls.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/18pls.png"
   },
   {
     "seasonId": 502,
     "className": "19 PLC–A (19 Premium Live Autumn)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19pla.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19pla.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/19pla.png"
   },
   {
     "seasonId": 503,
     "className": "19 PLC–S (19 Premium Live Spring)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19pls.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/19pls.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/19pls.png"
   },
   {
     "seasonId": 504,
     "className": "20KLeague (20KLeague)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20kl.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20kl.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/20kl.png"
   },
   {
     "seasonId": 506,
     "className": "20 PL (20 Premium Live)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20pla.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/20pla.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/20pla.png"
   },
   {
     "seasonId": 507,
     "className": "21KLeague (21KLeague)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21kl.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21kl.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/21kl.png"
   },
   {
     "seasonId": 508,
     "className": "21 PL (21 Premium Live)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21pla.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/21pla.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/21pla.png"
   },
   {
     "seasonId": 510,
     "className": "22KLeague (22KLeague)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22kl.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22kl.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/22kl.png"
   },
   {
     "seasonId": 511,
     "className": "22 PL (22 Premium Live)",
-    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22pla.png"
+    "seasonImg": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/season/22pla.png",
+    "seasonCard": "https://ssl.nexon.com/s2/game/fo4/obt/externalAssets/card/22pla.png"
   }
 ]

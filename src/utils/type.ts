@@ -137,3 +137,11 @@ export type StatusDTO = {
   redCards: number; //	레드카드 수
   spRating: number; //	선수 평점
 };
+
+export type TradeDTO = {
+  tradeDate: string; //	거래일자 (ex. 2019-05-13T18:03:10) 구매(buy)일	경우	구매 등록 시점 판매(sell)일	경우	판매 완료 시점
+  saleSn: string; //	거래 고유 식별자
+  spid: number; //	선수 고유 식별자 (/metadata/spid API 참고)
+  grade: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10; //	거래 선수 강화 등급
+  value: number; //	거래 선수 가치(BP)
+};

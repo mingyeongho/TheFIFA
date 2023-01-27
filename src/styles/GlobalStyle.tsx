@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import EASANS from "../assets/EASPORTS15.ttf";
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -28,8 +29,12 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     .accent {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        font-family: 'EASANS'
     }
 
-    
+    @font-face {
+        font-family: 'EASANS';
+        src: url(${EASANS});
+    }
 `;

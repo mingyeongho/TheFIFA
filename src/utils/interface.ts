@@ -1,5 +1,5 @@
 import React, { ChangeEvent } from "react";
-import { MatchDTO, User } from "./type";
+import { MatchDTO, TradeDTO, User } from "./type";
 
 export interface ShadowBoxProps {
   children: React.ReactNode;
@@ -45,4 +45,9 @@ export interface PlayerProps {
   yelloCards: number;
   redCards: number;
   controller: string;
+}
+
+export interface TradeItemProps {
+  tradeItem: TradeDTO;
+  type: "buy" | "sell";
 }
