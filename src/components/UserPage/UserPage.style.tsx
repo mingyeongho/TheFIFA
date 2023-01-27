@@ -6,4 +6,6 @@ export const UserPage = styled.main`
   /* background-image: url("https://ssl.nexon.com/s2/game/fo4/obt/sub_header/bg_sub_community.png"); */
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 20px;
+  gap: 20px;
 `;
