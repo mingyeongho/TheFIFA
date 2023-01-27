@@ -8,11 +8,8 @@ import * as S from "./MatchItem.style";
 import Player from "./Player/Player";
 
 const MatchItem = ({ matchItem, accessId }: MatchItemProps) => {
-  const { matchDate, matchType } = matchItem;
-  const { player1_info, player2_info, getResult } = useMatchItem(
-    matchItem,
-    accessId
-  );
+  const { player1_info, player2_info, getResult, matchDate, matchType } =
+    useMatchItem(matchItem, accessId);
   const PaletteResult = Palette[getResult().type];
 
   return (

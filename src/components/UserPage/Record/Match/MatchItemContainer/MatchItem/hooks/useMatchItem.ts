@@ -1,7 +1,7 @@
 import { MatchDTO } from "../../../../../../../utils/type";
 
 const useMatchItem = (matchItem: MatchDTO, accessId: string) => {
-  const { matchInfo } = matchItem;
+  const { matchInfo, matchDate, matchType } = matchItem;
   const own = matchInfo.find((player) => player.accessId === accessId)!;
   const [player1, player2] = matchInfo;
 
@@ -51,7 +51,7 @@ const useMatchItem = (matchItem: MatchDTO, accessId: string) => {
     }
   };
 
-  return { player1_info, player2_info, getResult };
+  return { player1_info, player2_info, getResult, matchDate, matchType };
 };
 
 export default useMatchItem;

@@ -11,7 +11,10 @@ const MatchItemContainer = ({ matchId, accessId }: MatchItemContainerProps) => {
       {isLoading ? (
         <S.Loading children={`Loading...`} />
       ) : (
-        data && <MatchItem matchItem={data} accessId={accessId} />
+        data &&
+        data.matchInfo.length >= 2 && (
+          <MatchItem matchItem={data} accessId={accessId} />
+        )
       )}
     </S.MatchItemContainer>
   );
