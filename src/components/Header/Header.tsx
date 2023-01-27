@@ -8,6 +8,9 @@ const S_Header = styled.header`
   background-color: black;
   color: white;
   padding: 8px 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
 `;
 
 const S_Logo = styled.h1``;
