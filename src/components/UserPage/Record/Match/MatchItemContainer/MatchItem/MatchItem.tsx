@@ -9,24 +9,11 @@ import Player from "./Player/Player";
 
 const MatchItem = ({ matchItem, accessId }: MatchItemProps) => {
   const { matchDate, matchType } = matchItem;
-  const { player1, player2, getResult } = useMatchItem(matchItem, accessId);
+  const { player1_info, player2_info, getResult } = useMatchItem(
+    matchItem,
+    accessId
+  );
   const PaletteResult = Palette[getResult().type];
-
-  const player1_info = {
-    nickname: player1.nickname,
-    goal: player1.shoot.goalTotalDisplay,
-    yelloCards: player1.matchDetail.yellowCards,
-    redCards: player1.matchDetail.redCards,
-    controller: player1.matchDetail.controller,
-  };
-
-  const player2_info = {
-    nickname: player2.nickname,
-    goal: player2.shoot.goalTotalDisplay,
-    yelloCards: player2.matchDetail.yellowCards,
-    redCards: player2.matchDetail.redCards,
-    controller: player2.matchDetail.controller,
-  };
 
   return (
     <S.MatchItem>

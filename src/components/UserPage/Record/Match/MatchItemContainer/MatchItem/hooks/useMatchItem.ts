@@ -5,6 +5,22 @@ const useMatchItem = (matchItem: MatchDTO, accessId: string) => {
   const own = matchInfo.find((player) => player.accessId === accessId)!;
   const [player1, player2] = matchInfo;
 
+  const player1_info = {
+    nickname: player1.nickname,
+    goal: player1.shoot.goalTotalDisplay,
+    yelloCards: player1.matchDetail.yellowCards,
+    redCards: player1.matchDetail.redCards,
+    controller: player1.matchDetail.controller,
+  };
+
+  const player2_info = {
+    nickname: player2.nickname,
+    goal: player2.shoot.goalTotalDisplay,
+    yelloCards: player2.matchDetail.yellowCards,
+    redCards: player2.matchDetail.redCards,
+    controller: player2.matchDetail.controller,
+  };
+
   const [endType, result] = [
     own.matchDetail.matchEndType,
     own.matchDetail.matchResult,
@@ -35,7 +51,7 @@ const useMatchItem = (matchItem: MatchDTO, accessId: string) => {
     }
   };
 
-  return { player1, player2, getResult };
+  return { player1_info, player2_info, getResult };
 };
 
 export default useMatchItem;

@@ -7,7 +7,7 @@ const useMatch = (accessId: string) => {
   const [type, setType] = useState(50);
 
   const { isLoading, data } = useQuery({
-    queryKey: ["getMatchList", type],
+    queryKey: ["getMatchList", type, accessId],
     queryFn: () =>
       axios.get(
         API_URL.getMatchRecord({

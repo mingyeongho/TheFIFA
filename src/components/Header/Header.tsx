@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const S_Header = styled.header`
@@ -14,7 +15,9 @@ const S_Logo = styled.h1``;
 const Header = () => {
   return (
     <S_Header>
-      <S_Logo className="accent">TheFIFA</S_Logo>
+      <Link to={"/"}>
+        <S_Logo className="accent">TheFIFA</S_Logo>
+      </Link>
     </S_Header>
   );
 };
