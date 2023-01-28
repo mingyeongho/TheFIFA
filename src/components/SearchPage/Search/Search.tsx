@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Search = ({ label, name, value, placeholder, onChange }: SearchProps) => {
   const naviagte = useNavigate();
 
-  const onSubmit = async (e: FormEvent) => {
+  const onSubmit = (e: FormEvent) => {
     e.preventDefault();
     naviagte(`/user/${value}`);
   };
