@@ -45,21 +45,23 @@ npm run dev
 
 <h2 id='features'>요구사항</h2>
 
-- [ ] 유저를 검색할 경우 /user/:nickname로 이동하고 매치 기록을 보여준다
+- [x] 유저를 검색할 경우 /user/:nickname로 이동하고 매치 기록을 보여준다
 
-- [ ] /user/:nickname으로 이동하면 매치 기록을 보여준다
+- [x] /user/:nickname으로 이동하면 매치 기록을 보여준다
 
-- [ ] /user/:nickname?record=trade는 거래 기록을 보여준다
+- [x] /user/:nickname?record=trade는 거래 기록을 보여준다
 
 - [ ] 존재하지 않은 유저를 검색하면 404 페이지를 보여준다
 
-- [ ] MatchRecord와 TradeRecord를 보여줄 때 각 Nav에 따라 다른 데이터를 보여준다
+- [x] MatchRecord와 TradeRecord를 보여줄 때 각 Nav에 따라 다른 데이터를 보여준다
 
-- [ ] /user/:nickname에서 다른 유저를 검색할 수 있는 Form이 존재한다
+- [x] /user/:nickname에서 다른 유저를 검색할 수 있는 Form이 존재한다
 
-- [ ] 매치 기록이 없거나 거래 기록이 없을 경우 기록이 없습니다 와 같은 것을 보여준다
+- [ ] 매치 기록이 없거나 거래 기록이 없을 경우 '기록이 없습니다 '와 같은 것을 보여준다
 
 <h2 id='library'>라이브러리</h2>
+
+<img width="380" alt="image" src="https://user-images.githubusercontent.com/57670160/215244537-b50d10e0-4d8f-4d87-8748-732368df6527.png">
 
 <h2 id='structure'>폴더 구조</h2>
 
