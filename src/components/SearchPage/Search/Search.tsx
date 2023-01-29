@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 const Search = ({ label, name, value, placeholder, onChange }: SearchProps) => {
   const naviagte = useNavigate();
+
   const getSavedUser = Storage.getStorage({ key: SEARCHUSER });
   const [savedUser, setSavedUser] = useState<string[] | null>(
     getSavedUser ? JSON.parse(getSavedUser) : null
@@ -45,16 +46,16 @@ const Search = ({ label, name, value, placeholder, onChange }: SearchProps) => {
       </S.InputContainer>
       <S.SavedUserContainer>
         {savedUser &&
-          savedUser.map((savedUser, idx) => (
+          savedUser.map((user, idx) => (
             <S.SavedUser key={idx}>
-              <Link to={`user/${savedUser}`}>
-                <span>{savedUser}</span>
+              <Link to={`user/${user}`}>
+                <span>{user}</span>
               </Link>
               <S.XButton
                 children="X"
                 onClick={onRemove}
                 type="button"
-                id={savedUser}
+                id={user}
               />
             </S.SavedUser>
           ))}
