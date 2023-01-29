@@ -78,3 +78,8 @@ npm run dev
 - MatchItem을 가져올 때 MatchInfo 배열이 한 명의 유저를 가져올 경우가 있다
 
   - MatchInfo의 length가 2보다 작으면 그 데이터는 안가져오도록 변경
+
+- 검색 기록이 남았으면 좋겠다.
+
+  - UserPage에 들어가면 user 정보를 가져온다.
+  - user 정보를 가져오면 localStorage에 이 데이터가 있는지 확인하고 있다면 그 데이터를 지우고 최상단에 데이터를 올리고 없다면 그냥 최상단에 올린다.

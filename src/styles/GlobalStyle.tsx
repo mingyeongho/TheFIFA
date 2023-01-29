@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import EASANS from "../assets/EASPORTS15.ttf";
+import { Variable } from "./Variable";
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -29,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     .accent {
-
+        color: ${Variable.accent};
         font-family: 'EASANS'
     }
 

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import useHeader from "./hooks/useHeader";
@@ -52,6 +51,7 @@ const Header = () => {
             placeholder="구단주명"
             value={nickname}
             onChange={onChange}
+            autoComplete="off"
           />
           <S_Button type="submit" children="검색" onClick={onSubmit} />
         </S_SearchContainer>

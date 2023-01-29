@@ -118,3 +118,7 @@ export const GradePalette = {
     borderRightColor: "#cda000 !important",
   },
 };
+
+export const Variable = {
+  accent: "#9fe30c",
+};
