@@ -4,7 +4,7 @@ import { API_KEY, API_URL } from "../../../../../../utils/constant";
 import { MatchDTO } from "../../../../../../utils/type";
 
 const useMatchItemContainer = (matchId: string) => {
-  const { isLoading, data } = useQuery<MatchDTO>({
+  const { data } = useQuery<MatchDTO>({
     queryKey: ["getMatchItem", matchId],
     queryFn: () =>
       axios
@@ -15,7 +15,7 @@ const useMatchItemContainer = (matchId: string) => {
     suspense: true,
   });
 
-  return { isLoading, data };
+  return { data };
 };
 
 export default useMatchItemContainer;
