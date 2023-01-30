@@ -122,3 +122,16 @@ export const GradePalette = {
 export const Variable = {
   accent: "#9fe30c",
 };
+
+export const Breakpoints = {
+  mobile: "767px",
+  tablet_min: "768px",
+  tablet_max: "1023px",
+  desktop: "1024px",
+};
+
+export const theme = {
+  mobile: `(max-width: ${Breakpoints.mobile})`,
+  tablet: `(min-width: ${Breakpoints.tablet_min}) and (max-width: ${Breakpoints.tablet_max})`,
+  desktop: `(min-width: ${Breakpoints.desktop})`,
+};

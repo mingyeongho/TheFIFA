@@ -19,4 +19,14 @@ export const RecordNav = styled.nav`
       background-color: #b1b1b1;
     }
   }
+
+  @media ${(props) => props.theme.mobile} {
+    padding: 10px;
+
+    a {
+      padding: 4px;
+      font-size: 1rem;
+      border-radius: 6px;
+    }
+  }
 `;

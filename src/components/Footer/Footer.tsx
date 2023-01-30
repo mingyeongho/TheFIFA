@@ -12,6 +12,18 @@ const S_Footer = styled.footer`
   span {
     font-size: 1.5rem;
   }
+
+  @media ${(props) => props.theme.mobile} {
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  @media ${(props) => props.theme.tablet} {
+    span {
+      font-size: 1rem;
+    }
+  }
 `;
 
 const Footer = () => {

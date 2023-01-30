@@ -38,6 +38,9 @@ export const Input = styled.input`
   border: none;
   padding: 8px;
   outline: none;
+  @media ${(props) => props.theme.mobile} {
+    width: 90px;
+  }
 `;
 
 export const Button = styled.button`
@@ -45,6 +48,7 @@ export const Button = styled.button`
   background-color: inherit;
   cursor: pointer;
   padding: 8px;
+  color: black;
 `;
 
 export const Popover = styled.div`

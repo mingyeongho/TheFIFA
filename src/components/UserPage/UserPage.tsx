@@ -4,10 +4,11 @@ import NotFound from "./NotFound/NotFound";
 import Profile from "./Profile/Profile";
 import Record from "./Record/Record";
 import * as S from "./UserPage.style";
+import record_bg from "../../assets/record_bg.png";
 
 const UserPage = () => {
   const nickname = decodeURI(useLocation().pathname).split("/")[2];
-  const { data, isError } = useUserPage(nickname);
+  const { data } = useUserPage(nickname);
 
   return (
     <S.UserPage>

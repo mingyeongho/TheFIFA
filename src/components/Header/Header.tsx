@@ -16,7 +16,11 @@ const S_Header = styled.header`
   z-index: 999;
 `;
 
-const S_Logo = styled.h1``;
+const S_Logo = styled.h1`
+  @media ${(props) => props.theme.mobile} {
+    font-size: 1.5rem;
+  }
+`;
 
 const Header = () => {
   const { pathname } = useLocation();

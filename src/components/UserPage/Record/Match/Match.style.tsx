@@ -6,6 +6,12 @@ export const MatchNav = styled.nav`
   display: flex;
   gap: 4px;
   padding: 10px 20px 20px 20px;
+
+  @media ${(props) => props.theme.mobile} {
+    width: calc(100vw - 50px);
+    padding: 10px;
+    overflow: scroll;
+  }
 `;
 
 export const NavItem = styled.button`
@@ -20,6 +26,11 @@ export const NavItem = styled.button`
   &.focus {
     background-color: #b1b1b1;
   }
+
+  @media ${(props) => props.theme.mobile} {
+    padding: 4px;
+    white-space: nowrap;
+  }
 `;
 
 export const MatchContent = styled.div`
@@ -28,6 +39,11 @@ export const MatchContent = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
+
+  @media ${(props) => props.theme.mobile} {
+    padding: 14px;
+    gap: 14px;
+  }
 `;
 
 export const Loader = styled.div`
@@ -38,4 +54,12 @@ export const Loader = styled.div`
   height: 100px;
   border-radius: 6px;
   background-color: #4c4c56;
+
+  @media ${(props) => props.theme.mobile} {
+    width: 300px;
+  }
+
+  @media ${(props) => props.theme.tablet} {
+    width: 330px;
+  }
 `;

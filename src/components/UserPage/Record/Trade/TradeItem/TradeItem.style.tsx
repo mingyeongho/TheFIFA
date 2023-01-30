@@ -16,6 +16,10 @@ export const TradeContent = styled.div`
   display: flex;
   flex-direction: column;
   padding: 8px 8px 0 8px;
+
+  @media ${(props) => props.theme.mobile} {
+    padding: 4px 4px 4px 8px;
+  }
 `;
 
 export const TradeSummary = styled.div`
@@ -23,6 +27,10 @@ export const TradeSummary = styled.div`
   flex-direction: column;
   gap: 4px;
   background-color: inherit;
+
+  @media ${(props) => props.theme.mobile} {
+    gap: 2px;
+  }
 `;
 
 export const PlayerInfo = styled.div`
@@ -55,12 +63,22 @@ export const Back = styled.span``;
 
 export const BackImg = styled.img`
   width: 140px;
+
+  @media ${(props) => props.theme.mobile} {
+    width: 80px;
+  }
 `;
 
 export const Faceon = styled.img`
   position: absolute;
   top: 38px;
   right: 5px;
+
+  @media ${(props) => props.theme.mobile} {
+    top: 26px;
+    right: 2px;
+    width: 70px;
+  }
 `;
 
 export const NameWrap = styled.div`
@@ -73,6 +91,10 @@ export const NameWrap = styled.div`
   gap: 4px;
   width: 100%;
   overflow: hidden;
+
+  @media ${(props) => props.theme.mobile} {
+    bottom: 20px;
+  }
 `;
 
 export const Name = styled.span`
@@ -80,6 +102,10 @@ export const Name = styled.span`
   font-size: 0.8rem;
   text-overflow: ellipsis;
   white-space: nowrap;
+
+  @media ${(props) => props.theme.mobile} {
+    font-size: 0.725rem;
+  }
 `;
 
 export const SeasonImg = styled.img`
@@ -87,6 +113,12 @@ export const SeasonImg = styled.img`
   position: absolute;
   bottom: 77px;
   left: 14px;
+
+  @media ${(props) => props.theme.mobile} {
+    width: 14px;
+    bottom: 45px;
+    left: 7px;
+  }
 `;
 
 export const Grade = styled.span<{
@@ -108,6 +140,14 @@ export const Grade = styled.span<{
   border-top-color: ${(props) => GradePalette[props.grade].borderTopColor};
   border-left-color: ${(props) => GradePalette[props.grade].borderLeftColor};
   border-right-color: ${(props) => GradePalette[props.grade].borderRightColor};
+
+  @media ${(props) => props.theme.mobile} {
+    bottom: 37px;
+    right: 1px;
+    width: 20px;
+    height: 12px;
+    font-size: 0.6rem;
+  }
 `;
 
 export const PriceWrap = styled.div`
@@ -118,6 +158,10 @@ export const PriceImg = styled.img`
   position: relative;
   width: 150px;
   top: -10px;
+
+  @media ${(props) => props.theme.mobile} {
+    width: 90px;
+  }
 `;
 
 export const Price = styled.span`
@@ -131,4 +175,9 @@ export const Price = styled.span`
   width: 100%;
   color: white;
   font-size: 0.85rem;
+
+  @media ${(props) => props.theme.mobile} {
+    font-size: 0.7rem;
+    top: -4px;
+  }
 `;
