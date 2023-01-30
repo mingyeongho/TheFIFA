@@ -51,7 +51,7 @@ npm run dev
 
 - [x] /user/:nickname?record=trade는 거래 기록을 보여준다
 
-- [ ] 존재하지 않은 유저를 검색하면 404 페이지를 보여준다
+- [x] 존재하지 않은 유저를 검색하면 404 페이지를 보여준다
 
 - [x] MatchRecord와 TradeRecord를 보여줄 때 각 Nav에 따라 다른 데이터를 보여준다
 
@@ -59,9 +59,11 @@ npm run dev
 
 - [ ] 매치 기록이 없거나 거래 기록이 없을 경우 '기록이 없습니다 '와 같은 것을 보여준다
 
+- [x] 검색한 유저들의 목록을 저장하여 보여준다.
+
 <h2 id='library'>라이브러리</h2>
 
-<img width="380" alt="image" src="https://user-images.githubusercontent.com/57670160/215244537-b50d10e0-4d8f-4d87-8748-732368df6527.png">
+<img width="369" alt="image" src="https://user-images.githubusercontent.com/57670160/215384941-549d6ce1-9a43-4064-bae8-f7511a6a9d52.png">
 
 <h2 id='structure'>폴더 구조</h2>
 
@@ -83,3 +85,5 @@ npm run dev
 
   - UserPage에 들어가면 user 정보를 가져온다.
   - user 정보를 가져오면 localStorage에 이 데이터가 있는지 확인하고 있다면 그 데이터를 지우고 최상단에 데이터를 올리고 없다면 그냥 최상단에 올린다.
+
+- 반응형 디자인
