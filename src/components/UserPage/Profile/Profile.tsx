@@ -4,7 +4,7 @@ import { API_KEY, API_URL } from "../../../utils/constant";
 import { ProfileProps } from "../../../utils/interface";
 import { DivisionType } from "../../../utils/type";
 import * as S from "./Profile.style";
-import profile from "../../../assets/profile.png";
+import profile from "../../../assets/profile.webp";
 
 const Division = lazy(() => import("./Division/Division"));
 

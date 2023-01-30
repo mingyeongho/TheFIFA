@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import EASANS from "../assets/EASPORTS15.ttf";
+import EASANS from "../assets/EASPORTS15.woff2";
 import { Variable } from "./Variable";
 
 export const GlobalStyle = createGlobalStyle`

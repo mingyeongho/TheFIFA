@@ -1,7 +1,7 @@
 import Search from "./Search/Search";
 import ShadowBox from "../Common/ShadowBox/ShadowBox";
 import * as S from "./SearchPage.style";
-import bg_img from "../../assets/bg_img.jpeg";
+import bg_img from "../../assets/bg_img.webp";
 import SearchRecord from "./SearchRecord/SearchRecord";
 
 const SearchPage = () => {
