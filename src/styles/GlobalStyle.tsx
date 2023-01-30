@@ -37,5 +37,6 @@ export const GlobalStyle = createGlobalStyle`
     @font-face {
         font-family: 'EASANS';
         src: url(${EASANS});
+        font-display: swap;
     }
 `;
