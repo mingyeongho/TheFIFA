@@ -1,7 +1,12 @@
+import { Suspense } from "react";
 import UserPage from "../components/UserPage/UserPage";
 
 const User = () => {
-  return <UserPage />;
+  return (
+    <Suspense fallback={<>...</>}>
+      <UserPage />
+    </Suspense>
+  );
 };
 
 export default User;
