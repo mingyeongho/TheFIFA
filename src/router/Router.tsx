@@ -6,7 +6,7 @@ const User = lazy(() => import("../pages/User"));
 
 const Router = () => {
   return (
-    <Suspense fallback={<>...</>}>
+    <Suspense fallback={<main>...</main>}>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/user/:nickname" element={<User />} />
