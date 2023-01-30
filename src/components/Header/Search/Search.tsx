@@ -1,38 +1,37 @@
 import { Link } from "react-router-dom";
-import useSearchContainer from "./hooks/useSearchContainer";
-import * as S from "./SearchContainer.style";
+import useSearch from "./hooks/useSearch";
+import * as S from "./Search.style";
 
 const SearchContainer = () => {
   const {
-    nickname,
-    onChange,
-    onSubmit,
-    inputRef,
+    nicknameInputProps,
+    searchButtonProps,
+    searchRecord,
     popoverRef,
-    onFocus,
-    onBlur,
-    savedUser,
     onRemove,
-  } = useSearchContainer();
+  } = useSearch();
+  const { value, placeholder, ref, onChange, onFocus, onBlur } =
+    nicknameInputProps;
+  const { children, onSubmit } = searchButtonProps;
 
   return (
     <S.SearchContainer>
       <S.SearchForm>
         <S.Input
-          placeholder="구단주명"
-          value={nickname}
+          placeholder={placeholder}
+          value={value}
           onChange={onChange}
           autoComplete="off"
-          ref={inputRef}
+          ref={ref}
           onFocus={onFocus}
           onBlur={onBlur}
         />
-        <S.Button type="submit" children="검색" onClick={onSubmit} />
+        <S.Button type="submit" children={children} onClick={onSubmit} />
       </S.SearchForm>
       <S.Popover className="popover" ref={popoverRef}>
-        {savedUser &&
-          savedUser.map((user, idx) => (
-            <S.SavedUser key={idx}>
+        {searchRecord &&
+          searchRecord.map((user, idx) => (
+            <S.SearchRecord key={idx}>
               <Link to={`user/${user}`}>
                 <span>{user}</span>
               </Link>
@@ -42,7 +41,7 @@ const SearchContainer = () => {
                 type="button"
                 id={user}
               />
-            </S.SavedUser>
+            </S.SearchRecord>
           ))}
       </S.Popover>
     </S.SearchContainer>

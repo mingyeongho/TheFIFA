@@ -6,19 +6,17 @@ import React, {
   useState,
 } from "react";
 import { useNavigate } from "react-router-dom";
+import { useRecoilState } from "recoil";
+import { searchRecordState } from "../../../../recoil/atom";
 import { SEARCHRECORD } from "../../../../utils/constant";
 import Storage from "../../../../utils/Storage";
 
-const useSearchContainer = () => {
+const useSearch = () => {
   const navigate = useNavigate();
   const [nickname, setNickname] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
-
-  const getSavedUser = Storage.getStorage({ key: SEARCHRECORD });
-  const [savedUser, setSavedUser] = useState<string[] | null>(
-    getSavedUser ? JSON.parse(getSavedUser) : null
-  );
+  const [searchRecord, setSearchRecord] = useRecoilState(searchRecordState);
 
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
     setNickname(e.target.value);
@@ -48,28 +46,39 @@ const useSearchContainer = () => {
   };
 
   const onRemove = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    if (!savedUser) {
-      return;
-    }
-    setSavedUser(savedUser.filter((user) => user !== e.currentTarget.id));
+    const id = e.currentTarget.id;
+    setSearchRecord((prev) => {
+      if (!prev) {
+        return prev;
+      }
+
+      const newSearchRecord = [...prev];
+      newSearchRecord.splice(prev.indexOf(id), 1);
+      return newSearchRecord;
+    });
   };
 
-  useEffect(() => {
-    Storage.setStorage({ key: SEARCHRECORD, value: JSON.stringify(savedUser) });
-  }, [savedUser]);
-
-  return {
-    nickname,
+  const nicknameInputProps = {
+    value: nickname,
+    placeholder: "구단주명",
     onChange,
-    onSubmit,
-    inputRef,
-    popoverRef,
+    ref: inputRef,
     onFocus,
     onBlur,
-    savedUser,
+  };
+
+  const searchButtonProps = {
+    children: "검색",
+    onSubmit,
+  };
+
+  return {
+    nicknameInputProps,
+    searchButtonProps,
+    searchRecord,
+    popoverRef,
     onRemove,
   };
 };
 
-export default useSearchContainer;
+export default useSearch;

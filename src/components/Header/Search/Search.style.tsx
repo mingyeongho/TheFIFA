@@ -64,7 +64,7 @@ export const Popover = styled.div`
   gap: 12px;
 `;
 
-export const SavedUser = styled.div`
+export const SearchRecord = styled.div`
   color: white;
   display: flex;
   justify-content: space-between;
