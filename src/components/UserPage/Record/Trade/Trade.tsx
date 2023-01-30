@@ -1,10 +1,11 @@
-import { Suspense } from "react";
+import { lazy } from "react";
 import { TradeProps } from "../../../../utils/interface";
 import { TradeDTO } from "../../../../utils/type";
 import { SeaprateX } from "../../../Common/Separate/Separate";
 import useTrade from "./hooks/useTrade";
 import * as S from "./Trade.style";
-import TradeItem from "./TradeItem/TradeItem";
+
+const TradeItem = lazy(() => import("./TradeItem/TradeItem"));
 
 const Navs: { desc: "판매" | "구매"; tradetype: "sell" | "buy" }[] = [
   {

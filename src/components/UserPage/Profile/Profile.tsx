@@ -1,11 +1,12 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { lazy, useEffect, useState } from "react";
 import { API_KEY, API_URL } from "../../../utils/constant";
 import { ProfileProps } from "../../../utils/interface";
 import { DivisionType } from "../../../utils/type";
-import Division from "./Division/Division";
 import * as S from "./Profile.style";
 import profile from "../../../assets/profile.png";
+
+const Division = lazy(() => import("./Division/Division"));
 
 const Profile = ({ user }: ProfileProps) => {
   const { nickname, level, accessId } = user;

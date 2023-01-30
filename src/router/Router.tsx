@@ -1,6 +1,8 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Index from "../pages/Index";
-import User from "../pages/User";
+import { lazy } from "react";
+import { Route, Routes } from "react-router-dom";
+
+const Index = lazy(() => import("../pages/Index"));
+const User = lazy(() => import("../pages/User"));
 
 const Router = () => {
   return (

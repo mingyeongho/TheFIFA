@@ -1,9 +1,10 @@
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { MatchItemContainerProps } from "../../../../../utils/interface";
 import Spinner from "../../../../Common/Spinner/Spinner";
 import useMatchItemContainer from "./hooks/useMatchItemContainer";
-import MatchItem from "./MatchItem/MatchItem";
 import * as S from "./MatchItemContainer.style";
+
+const MatchItem = lazy(() => import("./MatchItem/MatchItem"));
 
 const MatchItemContainer = ({ matchId, accessId }: MatchItemContainerProps) => {
   const { data } = useMatchItemContainer(matchId);

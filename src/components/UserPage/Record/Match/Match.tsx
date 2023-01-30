@@ -3,9 +3,12 @@ import jsonMatchType from "../../../../json/jsonMatchType.json";
 import * as S from "./Match.style";
 import { SeaprateX } from "../../../Common/Separate/Separate";
 import useMatch from "./hooks/useMatch";
-import MatchItemContainer from "./MatchItemContainer/MatchItemContainer";
 import Spinner from "../../../Common/Spinner/Spinner";
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
+
+const MatchItemContainer = lazy(
+  () => import("./MatchItemContainer/MatchItemContainer")
+);
 
 const Match = ({ accessId }: MatchProps) => {
   const { type, setType, data } = useMatch(accessId);

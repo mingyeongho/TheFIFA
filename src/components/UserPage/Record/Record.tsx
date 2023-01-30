@@ -1,11 +1,12 @@
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { useSearchParams } from "react-router-dom";
 import { RecordProps } from "../../../utils/interface";
 import Spinner from "../../Common/Spinner/Spinner";
-import Match from "./Match/Match";
 import * as S from "./Record.style";
-import RecordNav from "./RecordNav/RecordNav";
-import Trade from "./Trade/Trade";
+
+const Match = lazy(() => import("./Match/Match"));
+const Trade = lazy(() => import("./Trade/Trade"));
+const RecordNav = lazy(() => import("./RecordNav/RecordNav"));
 
 const Record = ({ user }: RecordProps) => {
   const { accessId } = user;

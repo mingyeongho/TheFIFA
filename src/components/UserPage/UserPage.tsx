@@ -1,10 +1,11 @@
+import { lazy } from "react";
 import { useLocation } from "react-router-dom";
 import useUserPage from "./hooks/useUserPage";
-import NotFound from "./NotFound/NotFound";
-import Profile from "./Profile/Profile";
-import Record from "./Record/Record";
 import * as S from "./UserPage.style";
-import record_bg from "../../assets/record_bg.png";
+
+const Profile = lazy(() => import("./Profile/Profile"));
+const Record = lazy(() => import("./Record/Record"));
+const NotFound = lazy(() => import("./NotFound/NotFound"));
 
 const UserPage = () => {
   const nickname = decodeURI(useLocation().pathname).split("/")[2];
