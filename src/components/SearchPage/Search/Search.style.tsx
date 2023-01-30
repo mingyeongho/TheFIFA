@@ -39,30 +39,3 @@ export const Button = styled.button`
   padding: 12px;
   cursor: pointer;
 `;
-
-export const SavedUserContainer = styled.div`
-  /* width: 100%; */
-  height: 200px;
-  background-color: black;
-  opacity: 0.4;
-  border-radius: 10px;
-  overflow: scroll;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-`;
-
-export const SavedUser = styled.div`
-  color: white;
-  display: flex;
-  justify-content: space-between;
-`;
-
-export const XButton = styled.button`
-  border: none;
-  outline: none;
-  background-color: inherit;
-  color: white;
-  cursor: pointer;
-`;

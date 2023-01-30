@@ -1,38 +1,12 @@
-import React, { FormEvent, useEffect, useState } from "react";
 import * as S from "./Search.style";
-import { SearchProps } from "../../../utils/interface";
-import { useNavigate } from "react-router-dom";
-import Storage from "../../../utils/Storage";
-import { SEARCHUSER } from "../../../utils/constant";
-import { Link } from "react-router-dom";
+import useSearch from "./hooks/useSearch";
 
-const Search = ({ label, name, value, placeholder, onChange }: SearchProps) => {
-  const naviagte = useNavigate();
-
-  const getSavedUser = Storage.getStorage({ key: SEARCHUSER });
-  const [savedUser, setSavedUser] = useState<string[] | null>(
-    getSavedUser ? JSON.parse(getSavedUser) : null
-  );
-
-  const onSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    naviagte(`/user/${value}`);
-  };
-
-  const onRemove = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    if (!savedUser) {
-      return;
-    }
-    setSavedUser(savedUser.filter((user) => user !== e.currentTarget.id));
-  };
-
-  useEffect(() => {
-    Storage.setStorage({ key: SEARCHUSER, value: JSON.stringify(savedUser) });
-  }, [savedUser]);
+const Search = () => {
+  const { nicknameInputProps, onSearchUser } = useSearch();
+  const { name, label, value, placeholder, onChange } = nicknameInputProps;
 
   return (
-    <S.Search onSubmit={onSubmit}>
+    <S.Search onSubmit={onSearchUser}>
       <S.Label children={label} htmlFor={name} />
       <S.InputContainer>
         <S.Input
@@ -44,22 +18,6 @@ const Search = ({ label, name, value, placeholder, onChange }: SearchProps) => {
         />
         <S.Button type="submit" children="검색" />
       </S.InputContainer>
-      <S.SavedUserContainer>
-        {savedUser &&
-          savedUser.map((user, idx) => (
-            <S.SavedUser key={idx}>
-              <Link to={`user/${user}`}>
-                <span>{user}</span>
-              </Link>
-              <S.XButton
-                children="X"
-                onClick={onRemove}
-                type="button"
-                id={user}
-              />
-            </S.SavedUser>
-          ))}
-      </S.SavedUserContainer>
     </S.Search>
   );
 };

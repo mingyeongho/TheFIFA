@@ -6,7 +6,7 @@ import React, {
   useState,
 } from "react";
 import { useNavigate } from "react-router-dom";
-import { SEARCHUSER } from "../../../../utils/constant";
+import { SEARCHRECORD } from "../../../../utils/constant";
 import Storage from "../../../../utils/Storage";
 
 const useSearchContainer = () => {
@@ -15,7 +15,7 @@ const useSearchContainer = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
 
-  const getSavedUser = Storage.getStorage({ key: SEARCHUSER });
+  const getSavedUser = Storage.getStorage({ key: SEARCHRECORD });
   const [savedUser, setSavedUser] = useState<string[] | null>(
     getSavedUser ? JSON.parse(getSavedUser) : null
   );
@@ -56,7 +56,7 @@ const useSearchContainer = () => {
   };
 
   useEffect(() => {
-    Storage.setStorage({ key: SEARCHUSER, value: JSON.stringify(savedUser) });
+    Storage.setStorage({ key: SEARCHRECORD, value: JSON.stringify(savedUser) });
   }, [savedUser]);
 
   return {

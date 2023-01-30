@@ -27,4 +27,4 @@ export const API_KEY = import.meta.env.VITE_API_KEY;
 
 export const FOOTER = `Data based on NEXON DEVELOPERS`;
 
-export const SEARCHUSER = "SearchUser";
+export const SEARCHRECORD = "SearchRecord";
