@@ -60,7 +60,7 @@ npm run dev
 
 - [x] /user/:nickname에서 다른 유저를 검색할 수 있는 Form이 존재한다
 
-- [ ] 매치 기록이 없거나 거래 기록이 없을 경우 '기록이 없습니다 '와 같은 것을 보여준다
+- [x] 매치 기록이 없거나 거래 기록이 없을 경우 '기록이 없습니다 '와 같은 것을 보여준다
 
 - [x] 검색한 유저들의 목록을 저장하여 보여준다.
 
@@ -70,13 +70,130 @@ npm run dev
 
 <h2 id='structure'>폴더 구조</h2>
 
+<pre>
+.
+├── App.tsx
+├── assets
+│   ├── EASPORTS15.woff2
+│   ├── bg_img.webp
+│   ├── player_bar.webp
+│   ├── profile.webp
+│   └── record_bg.png
+├── components
+│   ├── Common
+│   │   ├── Separate
+│   │   │   └── Separate.tsx
+│   │   ├── ShadowBox
+│   │   │   └── ShadowBox.tsx
+│   │   └── Spinner
+│   │   └── Spinner.tsx
+│   ├── Footer
+│   │   └── Footer.tsx
+│   ├── Header
+│   │   ├── Header.tsx
+│   │   └── Search
+│   │   ├── Search.style.tsx
+│   │   ├── Search.tsx
+│   │   └── hooks
+│   │   └── useSearch.ts
+│   ├── SearchPage
+│   │   ├── Search
+│   │   │   ├── Search.style.tsx
+│   │   │   ├── Search.tsx
+│   │   │   └── hooks
+│   │   │   └── useSearch.ts
+│   │   ├── SearchPage.style.tsx
+│   │   ├── SearchPage.tsx
+│   │   └── SearchRecord
+│   │   ├── SearchRecord.style.tsx
+│   │   ├── SearchRecord.tsx
+│   │   └── hooks
+│   │   └── useSearchRecord.ts
+│   └── UserPage
+│   ├── NotFound
+│   │   ├── NotFound.style.tsx
+│   │   └── NotFound.tsx
+│   ├── Profile
+│   │   ├── Division
+│   │   │   ├── Division.style.tsx
+│   │   │   ├── Division.tsx
+│   │   │   └── hooks
+│   │   │   └── useDivision.ts
+│   │   ├── Profile.style.tsx
+│   │   └── Profile.tsx
+│   ├── Record
+│   │   ├── Match
+│   │   │   ├── Match.style.tsx
+│   │   │   ├── Match.tsx
+│   │   │   ├── MatchItemContainer
+│   │   │   │   ├── MatchItem
+│   │   │   │   │   ├── MatchItem.style.tsx
+│   │   │   │   │   ├── MatchItem.tsx
+│   │   │   │   │   ├── Player
+│   │   │   │   │   │   ├── Player.style.tsx
+│   │   │   │   │   │   └── Player.tsx
+│   │   │   │   │   └── hooks
+│   │   │   │   │   └── useMatchItem.ts
+│   │   │   │   ├── MatchItemContainer.style.tsx
+│   │   │   │   ├── MatchItemContainer.tsx
+│   │   │   │   └── hooks
+│   │   │   │   └── useMatchItemContainer.ts
+│   │   │   └── hooks
+│   │   │   └── useMatch.tsx
+│   │   ├── Record.style.tsx
+│   │   ├── Record.tsx
+│   │   ├── RecordNav
+│   │   │   ├── RecordNav.style.tsx
+│   │   │   └── RecordNav.tsx
+│   │   └── Trade
+│   │   ├── Trade.style.tsx
+│   │   ├── Trade.tsx
+│   │   ├── TradeItem
+│   │   │   ├── TradeItem.style.tsx
+│   │   │   ├── TradeItem.tsx
+│   │   │   └── hooks
+│   │   │   └── useTradeItem.ts
+│   │   └── hooks
+│   │   └── useTrade.ts
+│   ├── UserPage.style.tsx
+│   ├── UserPage.tsx
+│   └── hooks
+│   └── useUserPage.ts
+├── function
+│   ├── getMatchType.ts
+│   └── timeDiff.ts
+├── json
+│   ├── division.json
+│   ├── divisionVolta.json
+│   ├── jsonMatchType.json
+│   ├── seasonId.json
+│   ├── spid.json
+│   └── spposition.json
+├── main.tsx
+├── pages
+│   ├── Index.tsx
+│   └── User.tsx
+├── recoil
+│   ├── atom.ts
+│   └── effects.ts
+├── router
+│   └── Router.tsx
+├── styles
+│   ├── GlobalStyle.tsx
+│   └── Variable.tsx
+├── utils
+│   ├── Storage.ts
+│   ├── constant.ts
+│   ├── interface.ts
+│   └── type.ts
+└── vite-env.d.ts
+</pre>
+
 <h2 id='agonize'>고민한 부분</h2>
 
 - 한 유저 검색 후 Home으로 가서 다른 유저를 검색하면 Error 발생
 
   - useQuery의 key에 accessId를 추가하여 accessId가 변경했을 경우 queryFn을 실행하도록 하였다
-
-- MatchDetail을 어떻게 표현할 것인가
 
 <h2 id='improve'>개선사항</h2>
 

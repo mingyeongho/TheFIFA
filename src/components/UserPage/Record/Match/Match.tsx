@@ -5,6 +5,7 @@ import { SeaprateX } from "../../../Common/Separate/Separate";
 import useMatch from "./hooks/useMatch";
 import Spinner from "../../../Common/Spinner/Spinner";
 import { lazy, Suspense } from "react";
+import NotFound from "../../NotFound/NotFound";
 
 const MatchItemContainer = lazy(
   () => import("./MatchItemContainer/MatchItemContainer")
@@ -28,12 +29,15 @@ const Match = ({ accessId }: MatchProps) => {
       </S.MatchNav>
       <SeaprateX />
       <S.MatchContent>
-        {data &&
+        {data && data.data.length > 0 ? (
           data.data.map((matchId: string, idx: string) => (
             <Suspense fallback={<S.Loader children={<Spinner />} />} key={idx}>
               <MatchItemContainer matchId={matchId} accessId={accessId} />
             </Suspense>
-          ))}
+          ))
+        ) : (
+          <NotFound />
+        )}
       </S.MatchContent>
     </S.MatchContainer>
   );
