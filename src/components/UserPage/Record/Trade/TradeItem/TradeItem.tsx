@@ -2,7 +2,7 @@ import timeDiff from "../../../../../function/timeDiff";
 import { TradeItemProps } from "../../../../../utils/interface";
 import useTradeItem from "./hooks/useTradeItem";
 import * as S from "./TradeItem.style";
-import priceImg from "../../../../../assets/player_bar.png";
+import priceImg from "../../../../../assets/player_bar.webp";
 
 const TradeItem = ({ tradeItem, type }: TradeItemProps) => {
   const {

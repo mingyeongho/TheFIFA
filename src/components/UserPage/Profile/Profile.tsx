@@ -5,7 +5,7 @@ import { ProfileProps } from "../../../utils/interface";
 import { DivisionType } from "../../../utils/type";
 import Division from "./Division/Division";
 import * as S from "./Profile.style";
-import profile from "../../../assets/profile.png";
+import profile from "../../../assets/profile.webp";
 
 const Profile = ({ user }: ProfileProps) => {
   const { nickname, level, accessId } = user;
